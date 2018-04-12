@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:background="#FFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="0dp"
+        >
+
+
+        <developer.zyc.wordex.ClearEditText
+            android:id="@+id/masked"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/ic_cancel_black_24dp"
+            android:focusedByDefault="false"
+            android:hint="输入英语单词或中文"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="#B5B5B5" />
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="3dp"
+            android:text="翻译"
+            android:textColor="@color/white"
+            android:background="@drawable/buttonselector"
+            android:textSize="20sp"
+            android:scaleX="1"
+            android:scaleY="0.8"
+            android:textScaleX="0.9" />
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:id="@+id/danci"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/steelblue"
+        android:textSize="40sp"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_3d_dic1"
+        android:visibility="gone"
+        android:clickable="true"
+        android:onClick="imageclick"/>
+</LinearLayout>
+    <TextView
+        android:id="@+id/yinbiao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text=""
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        android:visibility="visible"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/fanyi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text=""
+        android:textColor="@color/darkgray"
+        android:textSize="20sp"
+        android:visibility="visible" />
+</LinearLayout>

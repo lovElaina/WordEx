@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="词典选择">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_baidu"
+            android:icon="@drawable/ic_animal_paw_print"
+            android:title="百度词典" />
+        <item
+            android:id="@+id/nav_youdao"
+            android:icon="@drawable/ic_cloud_black_24dp"
+            android:title="有道词典" />
+        <item
+            android:id="@+id/nav_bing"
+            android:icon="@drawable/ic_bing"
+            android:title="必应词典" />
+        <item
+            android:id="@+id/nav_jinshan"
+            android:icon="@drawable/ic_mountain_range"
+            android:title="金山词典" />
+        <item
+            android:id="@+id/nav_phrase"
+            android:icon="@drawable/ic_storage_black_24dp"
+            android:title="短语翻译" />
+    </group>
+    </item>
+
+    <item android:title="其他">
+        <menu>
+            <item
+                android:id="@+id/nav_biji"
+                android:icon="@drawable/ic_3d_dictionary"
+                android:title="单词本" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_info_outline_black_24dp"
+                android:title="关于" />
+        </menu>
+    </item>
+
+</menu>
